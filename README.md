@@ -6,7 +6,7 @@ WEDE5020
 ## Website Goals and Objectives
 
 ## Sitemap
--Home--
+- Home--
 
 ## Changelog
 added logo, navigation, website content
