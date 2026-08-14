@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rea's Bakery | Enquiry</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Website header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Rea's Bakery</a>
+        </div>
+
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page introduction -->
+        <section class="page-header">
+            <h1>Make an Enquiry</h1>
+
+            <p>
+                Complete the form below and a member of our team will
+                respond to your enquiry.
+            </p>
+        </section>
+
+        <!-- Enquiry form -->
+        <section>
+
+            <form id="enquiryForm">
+
+                <fieldset>
+
+                    <legend>Customer Information</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        required
+                    >
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <label for="phone">Telephone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                    >
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Enquiry Details</legend>
+
+                    <label for="enquiryType">
+                        Type of Enquiry:
+                    </label>
+
+                    <select id="enquiryType" name="enquiryType" required>
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="product">
+                            Product Availability
+                        </option>
+
+                        <option value="custom-cake">
+                            Custom Cake
+                        </option>
+
+                        <option value="bulk-order">
+                            Bulk Order
+                        </option>
+
+                        <option value="wedding-cake">
+                            Wedding Cake
+                        </option>
+
+                        <option value="catering">
+                            Catering
+                        </option>
+
+                    </select>
+
+                    <label for="location">
+                        Preferred Collection Location:
+                    </label>
+
+                    <select id="location" name="location" required>
+
+                        <option value="">
+                            Select a location
+                        </option>
+
+                        <option value="central">
+                            Bloemfontein Central
+                        </option>
+
+                        <option value="bayswater">
+                            Bayswater
+                        </option>
+
+                    </select>
+
+                    <label for="date">
+                        Preferred Date:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                    >
+
+                    <label for="quantity">
+                        Number of Items:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                    >
+
+                    <label for="message">
+                        Enquiry Message:
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                </fieldset>
+
+                <!-- Form buttons -->
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+                <button type="reset">
+                    Clear Form
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rea's Bakery. All rights reserved.</p>
+        <p>Freshly Baked. Made with Love.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
