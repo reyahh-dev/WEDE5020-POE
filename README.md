@@ -163,26 +163,11 @@ reas-bakery/
 ├── README.md
 │
 ├── css/
-│   └── style.css
 │
-├── js/
-│   └── script.js
+├── _js/
 │
-└── images/
+└── _images/
     │
-    ├── logo/
-    │   └── logo.png
-    │
-    ├── products/
-    │   ├── bread.jpg
-    │   ├── croissant.jpg
-    │   ├── cake.jpg
-    │   └── cupcakes.jpg
-    │
-    └── general/
-        ├── bakery.jpg
-        ├── team.jpg
-        └── celebration.jpg
 ```
 
 ---
