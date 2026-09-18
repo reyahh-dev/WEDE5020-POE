@@ -7,7 +7,7 @@
 **Subject:** Web Development
 **Subject Code:** WEDE5020 
 **Group:** Group 3  
-**Project:** Website Project - Part 1
+**Project:** Website Project - Part 2
 
 ---
 
@@ -17,7 +17,7 @@ Rea's Bakery is a fictional local bakery created for the Website Project. The ba
 
 The purpose of this project is to design and develop a functional, informative and visually appealing website for Rea's Bakery. The website will provide customers with information about the bakery, its products, locations and services while allowing customers to submit enquiries.
 
-The website is designed to provide a simple and user-friendly experience for customers accessing the website from desktop and mobile devices.
+The website is designed to provide a simple and user-friendly experience for customers accessing the website from desktop, tablet and mobile devices.
 
 ---
 
@@ -63,11 +63,11 @@ The target audience includes:
 
 ## 4. Key Features and Functionality
 
-The website will contain five main pages.
+The website contains six main pages.
 
 ### Home
 
-The homepage introduces Rea's Bakery and displays the bakery's tagline, introduction, popular products and calls to action.
+The homepage introduces Rea's Bakery and displays an introduction, popular products and calls to action. The popular product cards are clickable and direct users to the Products page.
 
 ### About Us
 
@@ -81,6 +81,16 @@ The Products page displays the bakery's available products, including:
 - Pastries.
 - Cakes.
 - Cupcakes.
+
+### Services
+
+The Services page provides information about:
+
+- Custom Cakes.
+- Wedding Cakes.
+- Event Catering.
+- Bulk Orders.
+- Special Occasion Orders.
 
 ### Enquiry
 
@@ -123,13 +133,13 @@ GitHub Pages may be used to host the completed static website.
 ```text
                          REA'S BAKERY
                               |
-       +----------------------+----------------------+
-       |          |           |          |           |
-      HOME      ABOUT      PRODUCTS    ENQUIRY     CONTACT
-                  |           |
-             +----+----+   +--+--+--+--+
-             |    |    |   |     |     |
-           History Mission Vision Bread Pastries Cakes
+       +----------+-----------+-----------+----------+----------+
+       |          |           |           |          |          |
+      HOME      ABOUT      PRODUCTS    SERVICES   ENQUIRY    CONTACT
+                  |           |           |                     |
+          +-------+-----+   +-+--+--+--+  +-----+          +----+----+
+          |       |     |   |    |  |  |  |     |          |         |
+        Story  Mission Vision Bread Pastries Cakes Cupcakes Pretoria Sunnyside
 ```
 
 ### Website Navigation
@@ -141,12 +151,14 @@ Home
  |
  +-- Products
  |
+ +-- Services
+ |
  +-- Enquiry
  |
  +-- Contact
 ```
 
-All five pages will contain a consistent navigation menu so that users can move between pages.
+All six pages contain a consistent navigation menu so that users can move between pages.
 
 ---
 
@@ -158,16 +170,33 @@ reas-bakery/
 ├── index.html
 ├── about.html
 ├── products.html
+├── services.html
 ├── enquiry.html
 ├── contact.html
 ├── README.md
 │
-├── css/
+├── _css/
+│   └── style.css
 │
 ├── _js/
+│   └── script.js
 │
 └── _images/
-    │
+    ├── Logo.jpg
+    ├── White Bread.jpeg
+    ├── Brown Bread.jpg
+    ├── Seeded Loaf.jpeg
+    ├── Croissants.jpg
+    ├── Cinnamon Rolls.jpg
+    ├── Chocolate Muffins.jpg
+    ├── Fruit Danishes.jpg
+    ├── Chocolate Cake.jpg
+    ├── Vanilla Celebration Cake.jpeg
+    ├── Red Velvet Cake.jpeg
+    ├── Custom Celebration Cake.jpg
+    ├── Vanilla Cupcakes.jpeg
+    ├── Chocolate Cupcakes.jpg
+    └── Red Velvet Cupcakes.jpg
 ```
 
 ---
@@ -178,12 +207,15 @@ The website will use a warm and welcoming bakery-inspired design.
 
 ### Colour Scheme
 
-The proposed colour palette consists of:
+The Part 2 design uses a cream, navy blue, black and gold colour scheme:
 
-- Cream - background and neutral areas.
-- Brown - headings and branding.
-- Soft pink - highlights and accents.
-- White - content areas.
+- Cream - main background and neutral areas.
+- Navy blue - headings, navigation and buttons.
+- Black - main body text.
+- Gold - borders, highlights and decorative accents.
+- White - product cards, forms and content areas.
+
+The colour scheme was updated during Part 2 to create a consistent visual identity around the Rea's Bakery logo.
 
 ### Typography
 
@@ -198,15 +230,181 @@ The typography hierarchy will include:
 
 ### Layout
 
-The website will use:
+The website uses:
 
 - Consistent navigation.
+- A clickable Rea's Bakery logo.
 - Clear page headings.
 - Product cards.
+- Service cards.
 - Call-to-action buttons.
 - Structured content sections.
+- CSS Grid.
+- Flexbox.
 - Responsive layouts.
 - Consistent footer information.
+
+---
+
+# Part 2: CSS Styling and Responsive Design
+
+## External CSS Stylesheet
+
+An external CSS stylesheet named `style.css` was created and linked to all six HTML pages.
+
+The stylesheet is stored in:
+
+```text
+_css/style.css
+```
+
+The stylesheet contains:
+
+- CSS reset styles.
+- Colour variables.
+- Typography styles.
+- Header and navigation styles.
+- Product card styles.
+- Service card styles.
+- About Us section styles.
+- Enquiry form styles.
+- Contact and location styles.
+- Button styles.
+- Footer styles.
+- Responsive styles.
+
+## CSS Selectors
+
+Different CSS selectors are used throughout the stylesheet, including:
+
+- Element selectors such as `body`, `h1`, `p` and `img`.
+- Class selectors such as `.product-card`, `.service-card` and `.about-section`.
+- Pseudo-class selectors such as `:hover`, `:focus` and `:active`.
+- Media queries for responsive styling.
+
+## Desktop Layout
+
+The desktop version uses CSS Grid and Flexbox to organise content.
+
+The Home page displays popular products in a four-column layout.
+
+The Products page displays products using structured product cards.
+
+The Services page displays services in a grid layout.
+
+The About Us page separates each major section using spacing and gold borders.
+
+The Contact page uses separate location cards.
+
+## Interactive Styling
+
+Interactive CSS states were added to improve the user experience.
+
+### Hover
+
+Hover effects are applied to navigation links, buttons, product cards, service cards, value cards and Home page product cards.
+
+### Focus
+
+Focus styling is applied to links, buttons and form controls to make keyboard navigation more visible.
+
+### Active
+
+Active styling is included for interactive links and buttons.
+
+## Responsive Design
+
+The website was designed to work on desktop, tablet and mobile screen sizes.
+
+Relative units such as `%`, `rem` and `em` are used where appropriate.
+
+### Tablet Breakpoint
+
+```css
+@media (max-width: 900px)
+```
+
+At this breakpoint, navigation can wrap and grid layouts reduce the number of columns.
+
+### Mobile Breakpoint
+
+```css
+@media (max-width: 600px)
+```
+
+At this breakpoint, navigation becomes vertical and product, service, values and contact layouts reduce to one column.
+
+## Responsive Images
+
+Images are made responsive using CSS:
+
+```css
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+```
+
+Product images also use `object-fit: cover` to maintain consistent image dimensions within product cards.
+
+## Part 2 Testing
+
+The website was tested at desktop, tablet and mobile screen sizes.
+
+### Desktop Testing
+
+- Navigation displays correctly.
+- Logo displays correctly.
+- Product cards display in rows.
+- Images display correctly.
+- Text is readable.
+- Buttons and links work.
+- Colours and borders display correctly.
+
+### Tablet Testing
+
+- Grid layouts adjust to fewer columns.
+- Navigation wraps correctly.
+- Images resize correctly.
+- Text remains readable.
+- Content does not overflow the screen.
+
+### Mobile Testing
+
+- Navigation becomes vertical.
+- Product cards display in one column.
+- Service cards display in one column.
+- About Us sections fit the screen.
+- Images resize correctly.
+- Buttons remain accessible.
+- There is no unnecessary horizontal overflow.
+
+Screenshots of desktop, tablet and mobile testing should be added as evidence.
+
+## Part 1 Feedback and Changes
+
+The feedback received for Part 1 was:
+
+> "Create a logo instead of a phrase being a hyperlink."
+
+The website was updated by creating and adding a Rea's Bakery logo. The logo is displayed in the website header and links to the Home page.
+
+## Part 2 Improvements
+
+- Added the Rea's Bakery logo.
+- Replaced the text-based logo hyperlink with the actual bakery logo.
+- Added an external CSS stylesheet.
+- Added the cream, navy blue, black and gold colour scheme.
+- Added product images and product cards.
+- Added hover, focus and active states.
+- Added CSS Grid and Flexbox layouts.
+- Added responsive tablet and mobile styling.
+- Added responsive image styling.
+- Made Home page product cards clickable and linked them to the Products page.
+- Separated the About Us content into individual sections.
+- Added spacing and gold borders between major sections.
+- Added the Services page.
 
 ---
 
@@ -222,9 +420,10 @@ The content created for the website includes:
 - Organisation values.
 - Product descriptions.
 - Sample product prices.
+- Bakery services.
 - Contact information.
 - Opening hours.
-- Fictional bakery locations.
+- Fictional bakery locations (Pretoria Central and Sunnyside).
 
 Images used in the completed website will be sourced from appropriate public-domain, Creative Commons or royalty-free resources where applicable. Image sources will be documented in the project's reference list.
 
@@ -315,23 +514,51 @@ Changes:
 - Identified the target audience.
 - Created the website sitemap.
 - Created the initial folder structure.
-- Created the five initial HTML pages.
+- Created the initial HTML pages.
 - Added navigation links between pages.
 - Added initial website content.
 - Created the README.md file.
 
-### Version 0.2 - Future Update
+### Version 0.2 - Part 1 Development
 
-Planned:
+Changes:
 
-- Add CSS styling.
-- Add bakery images.
-- Improve responsive design.
-- Add JavaScript functionality.
-- Improve form validation.
-- Perform cross-browser testing.
+- Added product information.
+- Added bakery service information.
+- Added enquiry form.
+- Added contact information.
+- Added two fictional bakery locations.
+- Added initial product images.
+- Expanded the website structure to include the Services page.
 
----
+### Version 2.0 - Part 2 CSS and Responsive Design
+
+Changes:
+
+- Added an external `style.css` stylesheet.
+- Linked the CSS stylesheet to all six HTML pages.
+- Added the Rea's Bakery logo.
+- Replaced the text-based logo hyperlink with the actual bakery logo.
+- Added the cream, navy blue, black and gold colour scheme.
+- Added typography styling.
+- Added CSS Grid layouts.
+- Added Flexbox layouts.
+- Added product card styling.
+- Added service card styling.
+- Added About Us section styling.
+- Added enquiry form styling.
+- Added contact location styling.
+- Added button styling.
+- Added `:hover` states.
+- Added `:focus` states.
+- Added `:active` states.
+- Added tablet responsive styling.
+- Added mobile responsive styling.
+- Added responsive image styling.
+- Added clickable Home page product cards linking to the Products page.
+- Separated the About Us content into individual sections.
+- Added spacing and gold borders between major sections.
+- Tested the website at desktop, tablet and mobile screen sizes.
 
 ## 15. References
 
