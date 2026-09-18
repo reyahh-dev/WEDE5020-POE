@@ -350,7 +350,17 @@ Product images also use `object-fit: cover` to maintain consistent image dimensi
 
 ## Part 2 Testing
 
-The website was tested at desktop, tablet and mobile screen sizes.
+### Desktop View
+
+![Desktop View](_screenshots/Desktop%20View.png)
+
+### Tablet View
+
+![Tablet View](_screenshots/Tablet%20View.png)
+
+### Mobile View
+
+![Mobile View](_screenshots/Mobile%20View.png)
 
 ### Desktop Testing
 
