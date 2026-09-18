@@ -1,126 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page title displayed in the browser tab -->
-    <title>Rea's Bakery | Home</title>
+    <title>Home | Rea's Bakery</title>
 
-    <!-- Link to the external CSS stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="_css/style.css">
 </head>
 
 <body>
 
-    <!-- Header section containing the website navigation -->
+    <!-- ================= HEADER ================= -->
+
     <header>
-        <div class="logo">
-            <a href="index.html">Rea's Bakery</a>
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="_images/Logo.jpg" alt="Rea's Bakery Logo">
+            </a>
+
+
+            <!-- NAVIGATION -->
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="enquiry.html">Enquiry</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
         </div>
 
-        <!-- Main navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main content of the homepage -->
+
+    <!-- ================= WELCOME SECTION ================= -->
+
     <main>
 
-        <!-- Hero section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Freshly Baked. Made with Love.</h1>
+        <section class="welcome-section">
+
+            <div class="container">
+
+                <h1>
+                    Welcome to <span>Rea's Bakery</span>
+                </h1>
 
                 <p>
-                    Welcome to Rea's Bakery, where every product is
-                    freshly baked with care and passion.
+                    Rea's Bakery is your local destination for freshly baked bread,
+                    delicious pastries, beautifully decorated cakes and sweet treats.
                 </p>
 
-                <a href="products.html" class="button">
-                    View Our Products
-                </a>
+                <p>
+                    Whether you are looking for breakfast, an afternoon treat or a
+                    cake for a special occasion, we are ready to make your experience memorable.
+                </p>
 
-                <a href="enquiry.html" class="button">
+
+                <!-- GOLD DECORATION -->
+
+                <div class="welcome-divider">
+
+
+                </div>
+
+
+                <!-- ================= PRODUCT CARDS ================= -->
+
+                <div class="home-products">
+
+
+                    <!-- FRESH BREAD -->
+
+                    <a href="products.html" class="home-product-card">
+
+                        <img
+                            src="_images/White Bread.jpeg"
+                            alt="Freshly baked bread"
+                        >
+
+                        <h2>Fresh Bread</h2>
+
+                        <div class="card-divider">
+                           
+                        </div>
+
+                        <p>
+                            Freshly baked bread prepared
+                            for your everyday meals.
+                        </p>
+
+                        <span class="product-button">
+                            View Our Products →
+                        </span>
+
+                    </a>
+
+
+                    <!-- CUSTOM CAKES -->
+
+                    <a href="products.html" class="home-product-card">
+
+                        <img
+                            src="_images/Custom Celebration Cake.jpg"
+                            alt="Custom celebration cake"
+                        >
+
+                        <h2>Custom Cakes</h2>
+
+                        <div class="card-divider">
+                           
+                        </div>
+
+                        <p>
+                            Personalised cakes created
+                            for birthdays and special celebrations.
+                        </p>
+
+                        <span class="product-button">
+                            View Our Products →
+                        </span>
+
+                    </a>
+
+
+                    <!-- PASTRIES -->
+
+                    <a href="products.html" class="home-product-card">
+
+                        <img
+                            src="_images/Croissants.jpg"
+                            alt="Freshly baked pastries"
+                        >
+
+                        <h2>Pastries</h2>
+
+                        <div class="card-divider">
+                            
+                        </div>
+
+                        <p>
+                            Delicious croissants, muffins
+                            and cinnamon rolls.
+                        </p>
+
+                        <span class="product-button">
+                            View Our Products →
+                        </span>
+
+                    </a>
+
+
+                    <!-- SWEET TREATS -->
+
+                    <a href="products.html" class="home-product-card">
+
+                        <img
+                            src="_images/Vanilla Cupcakes.jpeg"
+                            alt="Freshly baked sweet treats"
+                        >
+
+                        <h2>Sweet Treats</h2>
+
+                        <div class="card-divider">
+                            
+                        </div>
+
+                        <p>
+                            A variety of sweet treats
+                            to brighten your day.
+                        </p>
+
+                        <span class="product-button">
+                            View Our Products →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION ================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>Freshly Baked. Made with Love.</h2>
+
+                <p>
+                    Looking for something special?
+                    Contact Rea's Bakery today.
+                </p>
+
+                <a href="enquiry.html" class="btn">
                     Make an Enquiry
                 </a>
+
             </div>
-        </section>
 
-        <!-- Introduction section -->
-        <section class="introduction">
-            <h2>Welcome to Rea's Bakery</h2>
-
-            <p>
-                Rea's Bakery is your local destination for freshly baked
-                bread, delicious pastries, beautifully decorated cakes
-                and sweet treats.
-            </p>
-
-            <p>
-                Whether you are looking for breakfast, an afternoon treat
-                or a cake for a special occasion, we are ready to make
-                your experience memorable.
-            </p>
-        </section>
-
-        <!-- Featured products -->
-        <section class="featured-products">
-            <h2>Our Popular Products</h2>
-
-            <article class="product-card">
-                <h3>Fresh Bread</h3>
-                <p>
-                    Freshly baked bread prepared for your everyday meals.
-                </p>
-            </article>
-
-            <article class="product-card">
-                <h3>Custom Cakes</h3>
-                <p>
-                    Personalised cakes created for birthdays and
-                    special celebrations.
-                </p>
-            </article>
-
-            <article class="product-card">
-                <h3>Pastries</h3>
-                <p>
-                    Delicious croissants, muffins and cinnamon rolls.
-                </p>
-            </article>
-        </section>
-
-        <!-- Call to action -->
-        <section class="call-to-action">
-            <h2>Planning a Special Occasion?</h2>
-
-            <p>
-                Contact us about customised cakes and bulk orders.
-            </p>
-
-            <a href="enquiry.html" class="button">
-                Send an Enquiry
-            </a>
         </section>
 
     </main>
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>&copy; 2026 Rea's Bakery. All rights reserved.</p>
-        <p>Freshly Baked. Made with Love.</p>
+
+        <p>
+            Freshly Baked. Made with Love.
+        </p>
+
+        <p>
+            &copy; 2026 Rea's Bakery. All Rights Reserved.
+        </p>
+
     </footer>
 
-    <!-- JavaScript file -->
-    <script src="js/script.js"></script>
-
 </body>
+
 </html>

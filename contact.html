@@ -6,28 +6,32 @@
 
     <title>Rea's Bakery | Contact</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="_css/style.css">
 </head>
 
 <body>
 
     <!-- Website header -->
     <header>
-        <div class="logo">
-            <a href="index.html">Rea's Bakery</a>
-        </div>
+    <div class="header-container">
 
-        <!-- Navigation menu -->
+        <a href="index.html" class="logo">
+            <img src="_images/Logo.jpg" alt="Rea's Bakery Logo">
+        </a>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+
+    </div>
+</header>
 
     <main>
 
@@ -44,7 +48,7 @@
         <section>
             <h2>Our Locations</h2>
 
-            <article class="location">
+            <article class="location-card">
                 <h3>Pretoria Central</h3>
 
                 <address>
@@ -59,7 +63,7 @@
                 </p>
             </article>
 
-            <article class="location">
+            <article class="location-card">
                 <h3>Sunnyside</h3>
 
                 <address>
@@ -77,6 +81,7 @@
         </section>
 
         <!-- Opening hours -->
+         <article class="location-card">
         <section>
             <h2>Opening Hours</h2>
 
@@ -107,10 +112,12 @@
                 </tbody>
 
             </table>
+            </article>
         </section>
 
         <!-- Contact information -->
         <section>
+            <article class="location-card">
             <h2>Get In Touch</h2>
 
             <p>
@@ -126,10 +133,11 @@
                     051 123 4567
                 </a>
             </p>
+            </article>
         </section>
 
         <!-- Contact call to action -->
-        <section class="call-to-action">
+        <section class="cta">
 
             <h2>Have a Question?</h2>
 
@@ -137,7 +145,7 @@
                 Send us an enquiry and our team will get back to you.
             </p>
 
-            <a href="enquiry.html" class="button">
+            <a href="enquiry.html" class="btn">
                 Contact Rea's Bakery
             </a>
 
@@ -150,7 +158,7 @@
         <p>Freshly Baked. Made with Love.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="_js/script.js"></script>
 
 </body>
 </html>
