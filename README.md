@@ -352,15 +352,15 @@ Product images also use `object-fit: cover` to maintain consistent image dimensi
 
 ### Desktop View
 
-![Desktop View](Desktop View.png)
+![Desktop View](_screenshots/Desktop%20View.png)
 
 ### Tablet View
 
-![Tablet View](Tablet View.png)
+![Tablet View](_screenshots/Tablet%20View.png)
 
 ### Mobile View
 
-![Mobile View](Mobile View.png)
+![Mobile View](_screenshots/Mobile%20View.png)
 
 ### Desktop Testing
 
