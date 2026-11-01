@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rea's Bakery | Enquiry</title>
+    <!-- SEO Page Title -->
+    <title>Make an Enquiry | Rea's Bakery – Pretoria</title>
 
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Make an enquiry at Rea's Bakery in Pretoria about fresh bread, pastries, custom cakes, wedding cakes, bulk orders and catering services.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Rea's Bakery enquiry, bakery Pretoria, custom cake enquiries, wedding cake orders, bulk bakery orders, catering enquiries">
+
+    <!-- Website Author -->
+    <meta name="author" content="Rea's Bakery">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="_css/style.css">
 </head>
+
 
 <body>
 
     <!-- Website header -->
     <header>
-    <div class="header-container">
+        <div class="header-container">
 
-        <a href="index.html" class="logo">
-            <img src="_images/Logo.jpg" alt="Rea's Bakery Logo">
-        </a>
+            <a href="index.html" class="logo">
+                <img src="_images/Logo.jpg" alt="Rea's Bakery Logo">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    </div>
-</header>
+        </div>
+    </header>
 
     <main>
 
@@ -40,146 +53,129 @@
             <h1>Make an Enquiry</h1>
 
             <p>
-                Complete the form below and a member of our team will
-                respond to your enquiry.
+                Interested in our products or services?
+                Complete the form below and tell us what you need.
             </p>
         </section>
 
         <!-- Enquiry form -->
-        <section>
+        <section class="section">
 
-            <form id="enquiryForm">
+            <div class="form-container">
 
-                <fieldset>
+                <form id="enquiryForm">
 
-                    <legend>Customer Information</legend>
+                    <fieldset>
 
-                    <label for="fullName">Full Name:</label>
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        required
-                    >
+                        <legend>Customer Information</legend>
 
-                    <label for="email">Email Address:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
+                        <label for="fullName">Full Name:</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            minlength="2"
+                            maxlength="60"
+                            required
+                        >
 
-                    <label for="phone">Telephone Number:</label>
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                    >
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
 
-                </fieldset>
+                        <label for="phone">Telephone Number:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="(\+27|0)[1-9][0-9]{8}"
+                            title="Enter a valid South African number, for example 0821234567 or +27821234567."
+                            placeholder="0821234567"
+                            required
+                        >
 
-                <fieldset>
+                    </fieldset>
 
-                    <legend>Enquiry Details</legend>
+                    <fieldset>
 
-                    <label for="enquiryType">
-                        Type of Enquiry:
-                    </label>
+                        <legend>Enquiry Details</legend>
 
-                    <select id="enquiryType" name="enquiryType" required>
+                        <label for="enquiryType">Type of Enquiry:</label>
 
-                        <option value="">
-                            Select an option
-                        </option>
+                        <select id="enquiryType" name="enquiryType" required>
 
-                        <option value="product">
-                            Product Availability
-                        </option>
+                            <option value="">Select an option</option>
+                            <option value="Product Availability">Product Availability</option>
+                            <option value="Custom Cake">Custom Cake</option>
+                            <option value="Bulk Order">Bulk Order</option>
+                            <option value="Wedding Cake">Wedding Cake</option>
+                            <option value="Catering">Catering</option>
 
-                        <option value="custom-cake">
-                            Custom Cake
-                        </option>
+                        </select>
 
-                        <option value="bulk-order">
-                            Bulk Order
-                        </option>
+                        <label for="location">Preferred Collection Location:</label>
 
-                        <option value="wedding-cake">
-                            Wedding Cake
-                        </option>
+                        <select id="location" name="location" required>
 
-                        <option value="catering">
-                            Catering
-                        </option>
+                            <option value="">Select a location</option>
+                            <option value="Pretoria Central">Pretoria Central</option>
+                            <option value="Sunnyside">Sunnyside</option>
 
-                    </select>
+                        </select>
 
-                    <label for="location">
-                        Preferred Collection Location:
-                    </label>
+                        <label for="date">Preferred Date:</label>
 
-                    <select id="location" name="location" required>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
 
-                        <option value="">
-                            Select a location
-                        </option>
+                        <label for="quantity">Number of Items:</label>
 
-                        <option value="central">
-                            Pretoria Central
-                        </option>
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="100"
+                            required
+                        >
 
-                        <option value="sunnyside">
-                            Sunnyside
-                        </option>
+                        <label for="message">Enquiry Message:</label>
 
-                    </select>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Tell us more about the product or service you need..."
+                            required
+                        ></textarea>
 
-                    <label for="date">
-                        Preferred Date:
-                    </label>
+                    </fieldset>
 
-                    <input
-                        type="date"
-                        id="date"
-                        name="date"
-                    >
+                    <!-- Form buttons -->
+                    <button type="submit" class="btn">
+                        Submit Enquiry
+                    </button>
 
-                    <label for="quantity">
-                        Number of Items:
-                    </label>
+                    <button type="reset" class="btn">
+                        Clear Form
+                    </button>
 
-                    <input
-                        type="number"
-                        id="quantity"
-                        name="quantity"
-                        min="1"
-                    >
+                </form>
 
-                    <label for="message">
-                        Enquiry Message:
-                    </label>
+                <!-- JavaScript response appears here -->
+                <div id="enquiryResponse" aria-live="polite"></div>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                    ></textarea>
-
-                </fieldset>
-
-                <!-- Form buttons -->
-                <button type="submit">
-                    Submit Enquiry
-                </button>
-
-                <button type="reset">
-                    Clear Form
-                </button>
-
-            </form>
+            </div>
 
         </section>
 
@@ -194,3 +190,4 @@
 
 </body>
 </html>
+```

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Products | Rea's Bakery</title>
+    <!-- SEO Page Title -->
+    <title>Our Products | Rea's Bakery – Bread, Cakes and Pastries</title>
 
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore Rea's Bakery products, including freshly baked white bread, brown bread, croissants, pastries, celebration cakes and delicious cupcakes.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Rea's Bakery products, fresh bread, brown bread, croissants, cinnamon rolls, chocolate cake, celebration cakes, cupcakes, pastries">
+
+    <!-- Website Author -->
+    <meta name="author" content="Rea's Bakery">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="_css/style.css">
 </head>
 
@@ -34,7 +46,6 @@
         </div>
     </header>
 
-
     <!-- Page introduction -->
     <section class="products-intro">
 
@@ -51,13 +62,50 @@
                 <span>♥</span>
             </div>
 
+            <!-- Product Search and Filters -->
+            <div class="product-controls">
+
+                <label for="productSearch">Search for a product:</label>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search products, e.g. Chocolate Cake..."
+                >
+
+                <h2>Filter by Category</h2>
+
+                <div class="filter-buttons">
+
+                    <button type="button" class="filter-btn active" data-filter="all">
+                        All Products
+                    </button>
+
+                    <button type="button" class="filter-btn" data-filter="bread">
+                        Bread
+                    </button>
+
+                    <button type="button" class="filter-btn" data-filter="pastries">
+                        Pastries
+                    </button>
+
+                    <button type="button" class="filter-btn" data-filter="cakes">
+                        Cakes
+                    </button>
+
+                    <button type="button" class="filter-btn" data-filter="cupcakes">
+                        Cupcakes
+                    </button>
+
+                </div>
+
+            </div>
         </div>
 
     </section>
 
-
     <!-- Bread -->
-    <section class="product-section">
+    <section class="product-section" data-category="bread">
 
         <div class="product-category">
 
@@ -73,52 +121,43 @@
 
             </div>
 
-
             <div class="products">
 
                 <div class="product-card">
 
                     <img src="_images/White Bread.jpeg"
-                         alt="Freshly baked white bread">
+                         alt="Freshly baked white bread from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>White Bread</h3>
-
                         <p class="price">R25.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Brown Bread.jpg"
-                         alt="Freshly baked brown bread">
+                         alt="Freshly baked brown bread from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Brown Bread</h3>
-
                         <p class="price">R28.00</p>
-
                     </div>
 
                 </div>
 
-
                 <div class="product-card">
 
                     <img src="_images/Seeded Loaf.jpeg"
-                         alt="Freshly baked seeded loaf">
+                         alt="Freshly baked seeded loaf from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Seeded Loaf</h3>
-
                         <p class="price">R32.00</p>
-
                     </div>
 
                 </div>
@@ -129,9 +168,8 @@
 
     </section>
 
-
     <!-- Pastries -->
-    <section class="product-section">
+    <section class="product-section" data-category="pastries">
 
         <div class="product-category">
 
@@ -147,68 +185,56 @@
 
             </div>
 
-
             <div class="products">
 
                 <div class="product-card">
 
                     <img src="_images/Croissants.jpg"
-                         alt="Freshly baked croissants">
+                         alt="Freshly baked croissants from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Croissants</h3>
-
                         <p class="price">R18.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Cinnamon Rolls.jpg"
-                         alt="Freshly baked cinnamon rolls">
+                         alt="Freshly baked cinnamon rolls from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Cinnamon Rolls</h3>
-
                         <p class="price">R20.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Chocolate Muffins.jpg"
-                         alt="Chocolate muffins">
+                         alt="Freshly baked chocolate muffins from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Chocolate Muffins</h3>
-
                         <p class="price">R22.00</p>
-
                     </div>
 
                 </div>
 
-
                 <div class="product-card">
 
                     <img src="_images/Fruit Danishes.jpg"
-                         alt="Fruit danishes">
+                         alt="Fruit danish pastries from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Fruit Danishes</h3>
-
                         <p class="price">R25.00</p>
-
                     </div>
 
                 </div>
@@ -219,9 +245,8 @@
 
     </section>
 
-
     <!-- Cakes -->
-    <section class="product-section">
+    <section class="product-section" data-category="cakes">
 
         <div class="product-category">
 
@@ -238,68 +263,56 @@
 
             </div>
 
-
             <div class="products">
 
                 <div class="product-card">
 
                     <img src="_images/Chocolate Cake.jpg"
-                         alt="Chocolate cake">
+                         alt="Chocolate celebration cake from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Chocolate Cake</h3>
-
                         <p class="price">R180.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Vanilla Celebration Cake.jpeg"
-                         alt="Vanilla celebration cake">
+                         alt="Vanilla celebration cake from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Vanilla Celebration Cake</h3>
-
                         <p class="price">R160.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Red Velvet Cake.jpeg"
-                         alt="Red velvet cake">
+                         alt="Red velvet celebration cake from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Red Velvet Cake</h3>
-
                         <p class="price">R170.00</p>
-
                     </div>
 
                 </div>
 
-
                 <div class="product-card">
 
                     <img src="_images/Custom Celebration Cake.jpg"
-                         alt="Custom celebration cake">
+                         alt="Custom decorated celebration cake from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Custom Celebration Cake</h3>
-
                         <p class="price">From R250.00</p>
-
                     </div>
 
                 </div>
@@ -310,9 +323,8 @@
 
     </section>
 
-
     <!-- Cupcakes -->
-    <section class="product-section">
+    <section class="product-section" data-category="cupcakes">
 
         <div class="product-category">
 
@@ -328,52 +340,43 @@
 
             </div>
 
-
             <div class="products">
 
                 <div class="product-card">
 
                     <img src="_images/Vanilla Cupcakes.jpeg"
-                         alt="Vanilla cupcakes">
+                         alt="Fresh vanilla cupcakes from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Vanilla Cupcakes</h3>
-
                         <p class="price">R15.00</p>
-
                     </div>
 
                 </div>
-
 
                 <div class="product-card">
 
                     <img src="_images/Chocolate Cupcakes.jpg"
-                         alt="Chocolate cupcakes">
+                         alt="Fresh chocolate cupcakes from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Chocolate Cupcakes</h3>
-
                         <p class="price">R16.00</p>
-
                     </div>
 
                 </div>
 
-
                 <div class="product-card">
 
                     <img src="_images/Red Velvet Cupcakes.jpg"
-                         alt="Red velvet cupcakes">
+                         alt="Fresh red velvet cupcakes from Rea's Bakery"
+                         loading="lazy">
 
                     <div class="product-info">
-
                         <h3>Red Velvet Cupcakes</h3>
-
                         <p class="price">R17.00</p>
-
                     </div>
 
                 </div>
@@ -384,6 +387,9 @@
 
     </section>
 
+    <p id="noProductsMessage">
+        Sorry, no products match your search. Please try another product.
+    </p>
 
     <!-- Call to action -->
     <section class="cta">
@@ -404,7 +410,6 @@
 
     </section>
 
-
     <!-- Footer -->
     <footer>
 
@@ -418,6 +423,25 @@
 
     </footer>
 
-</body>
+    <!-- Product Image Lightbox -->
+    <div id="productLightbox"
+         class="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-hidden="true">
 
+        <button type="button" id="closeLightbox" class="lightbox-close"
+            aria-label="Close image">
+            &times;
+        </button>
+
+        <img id="lightboxImage" src="" alt="">
+
+        <p id="lightboxCaption"></p>
+
+    </div>
+
+    <script src="_js/script.js"></script>
+
+</body>
 </html>

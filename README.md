@@ -3,11 +3,11 @@
 ## Student Information
 
 **Student Name:** Reabetswe Sepeng  
-**Student Number:** ST10514318 
-**Subject:** Web Development
-**Subject Code:** WEDE5020 
+**Student Number:** ST10514318  
+**Subject:** Web Development  
+**Subject Code:** WEDE5020  
 **Group:** Group 3  
-**Project:** Website Project - Part 2
+**Project:** Website Project - Parts 1, 2 and 3
 
 ---
 
@@ -15,9 +15,9 @@
 
 Rea's Bakery is a fictional local bakery created for the Website Project. The bakery provides freshly baked bread, pastries, cupcakes, cakes and customised celebration cakes.
 
-The purpose of this project is to design and develop a functional, informative and visually appealing website for Rea's Bakery. The website will provide customers with information about the bakery, its products, locations and services while allowing customers to submit enquiries.
+The purpose of this project is to design and develop a functional, informative and visually appealing website for Rea's Bakery. The website provides customers with information about the bakery, its products, locations and services while allowing customers to submit enquiries and general messages.
 
-The website is designed to provide a simple and user-friendly experience for customers accessing the website from desktop, tablet and mobile devices.
+The website is designed to provide a simple and user-friendly experience for customers accessing it from desktop, tablet and mobile devices.
 
 ---
 
@@ -32,6 +32,7 @@ The main goals of the Rea's Bakery website are to:
 - Provide contact and location information.
 - Promote customised cakes and bulk orders.
 - Create an easy-to-navigate user experience.
+- Improve the website's visibility through SEO techniques.
 
 ### Key Performance Indicators
 
@@ -61,7 +62,7 @@ The target audience includes:
 
 ---
 
-## 4. Key Features and Functionality
+## 4. Website Pages and Features
 
 The website contains six main pages.
 
@@ -71,16 +72,18 @@ The homepage introduces Rea's Bakery and displays an introduction, popular produ
 
 ### About Us
 
-The About Us page provides information about the bakery's history, mission, vision and values.
+The About Us page provides information about the bakery's story, mission, vision and values.
 
 ### Products
 
-The Products page displays the bakery's available products, including:
+The Products page displays 14 bakery products across four categories:
 
 - Bread.
 - Pastries.
 - Cakes.
 - Cupcakes.
+
+The page includes a search feature, category filters and an image lightbox.
 
 ### Services
 
@@ -94,37 +97,34 @@ The Services page provides information about:
 
 ### Enquiry
 
-The Enquiry page contains a form allowing customers to submit enquiries about products, customised cakes, wedding cakes, catering and bulk orders.
+The Enquiry page contains a form allowing customers to enquire about product availability, customised cakes, wedding cakes, catering and bulk orders.
+
+The form includes HTML validation and JavaScript functionality that displays a response based on the enquiry information submitted.
 
 ### Contact
 
 The Contact page provides:
 
-- Two bakery locations.
+- Two fictional bakery locations.
 - Telephone information.
 - Email information.
 - Opening hours.
-- A link to the enquiry page.
+- A general contact form.
+- A link to the Enquiry page.
+
+The contact form prepares an email using the visitor's default email application.
 
 ---
 
 ## 5. Website Technologies
 
-The website will be developed using:
+The website uses the following technologies:
 
-- HTML5
-- CSS3
-- JavaScript
-
-HTML will be used to create the structure and content of the website.
-
-CSS will be used to control the appearance, layout, colours, typography and responsive design.
-
-JavaScript will be used to add interactive functionality to the website.
-
-Git and GitHub will be used for version control and project submission.
-
-GitHub Pages may be used to host the completed static website.
+- **HTML5:** Used to create the structure and content of the website.
+- **CSS3:** Used to control the appearance, layout, colours, typography and responsive design.
+- **JavaScript:** Used to add interactive functionality, form validation, product searching, category filtering and image lightbox features.
+- **Git and GitHub:** Used for version control and project submission.
+- **GitHub Pages or Netlify:** Considered for free static website hosting.
 
 ---
 
@@ -136,10 +136,10 @@ GitHub Pages may be used to host the completed static website.
        +----------+-----------+-----------+----------+----------+
        |          |           |           |          |          |
       HOME      ABOUT      PRODUCTS    SERVICES   ENQUIRY    CONTACT
-                  |           |           |                     |
-          +-------+-----+   +-+--+--+--+  +-----+          +----+----+
-          |       |     |   |    |  |  |  |     |          |         |
-        Story  Mission Vision Bread Pastries Cakes Cupcakes Pretoria Sunnyside
+                  |           |
+          +-------+-----+  +---+----+----+------+
+          |       |     |  |        |    |      |
+        Story  Mission Vision Bread Pastries Cakes Cupcakes
 ```
 
 ### Website Navigation
@@ -160,6 +160,13 @@ Home
 
 All six pages contain a consistent navigation menu so that users can move between pages.
 
+The project also includes:
+
+- `sitemap.xml` - Provides a list of website pages for search engine discovery.
+- `robots.txt` - Provides instructions for search engine crawlers.
+
+The sitemap and robots file currently use placeholder website URLs. These must be updated with the actual published website address after deployment.
+
 ---
 
 ## 7. File and Folder Structure
@@ -173,6 +180,8 @@ reas-bakery/
 ├── services.html
 ├── enquiry.html
 ├── contact.html
+├── sitemap.xml
+├── robots.txt
 ├── README.md
 │
 ├── _css/
@@ -181,47 +190,50 @@ reas-bakery/
 ├── _js/
 │   └── script.js
 │
-└── _images/
-    ├── Logo.jpg
-    ├── White Bread.jpeg
-    ├── Brown Bread.jpg
-    ├── Seeded Loaf.jpeg
-    ├── Croissants.jpg
-    ├── Cinnamon Rolls.jpg
-    ├── Chocolate Muffins.jpg
-    ├── Fruit Danishes.jpg
-    ├── Chocolate Cake.jpg
-    ├── Vanilla Celebration Cake.jpeg
-    ├── Red Velvet Cake.jpeg
-    ├── Custom Celebration Cake.jpg
-    ├── Vanilla Cupcakes.jpeg
-    ├── Chocolate Cupcakes.jpg
-    └── Red Velvet Cupcakes.jpg
+├── _images/
+│   ├── Logo.jpg
+│   ├── White Bread.jpeg
+│   ├── Brown Bread.jpg
+│   ├── Seeded Loaf.jpeg
+│   ├── Croissants.jpg
+│   ├── Cinnamon Rolls.jpg
+│   ├── Chocolate Muffins.jpg
+│   ├── Fruit Danishes.jpg
+│   ├── Chocolate Cake.jpg
+│   ├── Vanilla Celebration Cake.jpeg
+│   ├── Red Velvet Cake.jpeg
+│   ├── Custom Celebration Cake.jpg
+│   ├── Vanilla Cupcakes.jpeg
+│   ├── Chocolate Cupcakes.jpg
+│   └── Red Velvet Cupcakes.jpg
+│
+└── _screenshots/
+    ├── Desktop View.png
+    ├── Tablet View.png
+    └── Mobile View.png
 ```
 
 ---
 
 ## 8. Design Approach
 
-The website will use a warm and welcoming bakery-inspired design.
+The website uses a warm and welcoming bakery-inspired design.
 
 ### Colour Scheme
 
-The Part 2 design uses a cream, navy blue, black and gold colour scheme:
+The design uses a cream, navy blue, black and gold colour scheme:
 
-- Cream - main background and neutral areas.
-- Navy blue - headings, navigation and buttons.
-- Black - main body text.
-- Gold - borders, highlights and decorative accents.
-- White - product cards, forms and content areas.
-
-The colour scheme was updated during Part 2 to create a consistent visual identity around the Rea's Bakery logo.
+- Cream - Main background and neutral areas.
+- Navy blue - Headings, navigation and buttons.
+- Black - Main body text.
+- Gold - Borders, highlights and decorative accents.
+- White - Product cards, forms and content areas.
 
 ### Typography
 
-Aptos will be used as the primary font because it is clear and readable.
+Aptos is used as the primary font because it is clear and readable.
 
-The typography hierarchy will include:
+The typography hierarchy includes:
 
 - H1 - Main page headings.
 - H2 - Major sections.
@@ -248,7 +260,7 @@ The website uses:
 
 # Part 2: CSS Styling and Responsive Design
 
-## External CSS Stylesheet
+## 9. External CSS Stylesheet
 
 An external CSS stylesheet named `style.css` was created and linked to all six HTML pages.
 
@@ -272,8 +284,10 @@ The stylesheet contains:
 - Button styles.
 - Footer styles.
 - Responsive styles.
+- Lightbox styling.
+- Search and filter styling.
 
-## CSS Selectors
+## 10. CSS Selectors
 
 Different CSS selectors are used throughout the stylesheet, including:
 
@@ -282,37 +296,7 @@ Different CSS selectors are used throughout the stylesheet, including:
 - Pseudo-class selectors such as `:hover`, `:focus` and `:active`.
 - Media queries for responsive styling.
 
-## Desktop Layout
-
-The desktop version uses CSS Grid and Flexbox to organise content.
-
-The Home page displays popular products in a four-column layout.
-
-The Products page displays products using structured product cards.
-
-The Services page displays services in a grid layout.
-
-The About Us page separates each major section using spacing and gold borders.
-
-The Contact page uses separate location cards.
-
-## Interactive Styling
-
-Interactive CSS states were added to improve the user experience.
-
-### Hover
-
-Hover effects are applied to navigation links, buttons, product cards, service cards, value cards and Home page product cards.
-
-### Focus
-
-Focus styling is applied to links, buttons and form controls to make keyboard navigation more visible.
-
-### Active
-
-Active styling is included for interactive links and buttons.
-
-## Responsive Design
+## 11. Responsive Design
 
 The website was designed to work on desktop, tablet and mobile screen sizes.
 
@@ -334,7 +318,7 @@ At this breakpoint, navigation can wrap and grid layouts reduce the number of co
 
 At this breakpoint, navigation becomes vertical and product, service, values and contact layouts reduce to one column.
 
-## Responsive Images
+### Responsive Images
 
 Images are made responsive using CSS:
 
@@ -348,7 +332,7 @@ img {
 
 Product images also use `object-fit: cover` to maintain consistent image dimensions within product cards.
 
-## Part 2 Testing
+## 12. Part 2 Testing and Screenshots
 
 ### Desktop View
 
@@ -390,9 +374,7 @@ Product images also use `object-fit: cover` to maintain consistent image dimensi
 - Buttons remain accessible.
 - There is no unnecessary horizontal overflow.
 
-Screenshots of desktop, tablet and mobile testing should be added as evidence.
-
-## Part 1 Feedback and Changes
+### Part 1 Feedback and Changes
 
 The feedback received for Part 1 was:
 
@@ -400,7 +382,7 @@ The feedback received for Part 1 was:
 
 The website was updated by creating and adding a Rea's Bakery logo. The logo is displayed in the website header and links to the Home page.
 
-## Part 2 Improvements
+### Part 2 Improvements
 
 - Added the Rea's Bakery logo.
 - Replaced the text-based logo hyperlink with the actual bakery logo.
@@ -418,7 +400,208 @@ The website was updated by creating and adding a Rea's Bakery logo. The logo is 
 
 ---
 
-## 9. Content Research and Sourcing
+# Part 3: JavaScript, SEO and Website Improvements
+
+## 13. JavaScript Functionality
+
+JavaScript was added through an external file:
+
+```text
+_js/script.js
+```
+
+The JavaScript file provides interactive functionality across the website.
+
+### Enquiry Form Validation
+
+The Enquiry form uses HTML5 and JavaScript validation.
+
+Features include:
+
+- Required field validation.
+- Email address validation.
+- South African telephone number validation.
+- Minimum and maximum character limits.
+- Date validation to prevent selecting a past date.
+- A response message based on the selected enquiry type.
+- A clear form function.
+
+### Contact Form
+
+The Contact form allows customers to prepare a general email.
+
+Features include:
+
+- Required field validation.
+- Email address validation.
+- Telephone number validation.
+- Message type selection.
+- Full message field.
+- Email subject and message preparation.
+- Clear form functionality.
+
+The contact form uses a `mailto:` link to open the visitor's default email application. The visitor must send the email manually.
+
+### Product Search
+
+The Products page includes a search box that allows visitors to search for products by name.
+
+### Product Category Filters
+
+Visitors can filter products according to their category:
+
+- All.
+- Bread.
+- Pastries.
+- Cakes.
+- Cupcakes.
+
+A message is displayed when no products match the search.
+
+### Product Image Lightbox
+
+The Products page includes an image lightbox.
+
+Visitors can:
+
+- Click a product image to view a larger version.
+- View the product name.
+- Close the image using the close button.
+- Close the lightbox by clicking outside the image.
+- Press Escape to close the lightbox.
+
+---
+
+## 14. Search Engine Optimisation (SEO)
+
+SEO improvements were added to the six HTML pages to help search engines understand the website's content.
+
+### Page Titles
+
+Each page has a unique title describing its content.
+
+### Meta Descriptions
+
+Each page contains a meta description summarising the information available on that page.
+
+### Keywords
+
+Relevant bakery-related keywords were included in the page metadata and content.
+
+### Heading Structure
+
+Heading elements such as H1, H2 and H3 are used to organise website content.
+
+### Image Alt Text
+
+Descriptive alternative text is included on images to explain their content and improve accessibility.
+
+### Internal Linking
+
+Internal links connect the six pages and help visitors navigate the website.
+
+### Mobile-Friendly Design
+
+Responsive CSS allows the website to adjust to different screen sizes.
+
+### Sitemap and Robots File
+
+The project includes `sitemap.xml` and `robots.txt` to support search engine crawling and page discovery.
+
+---
+
+## 15. Performance and Security Improvements
+
+### Image Loading
+
+Lazy loading was added to product images further down the Home and Products pages to help reduce unnecessary initial image loading.
+
+The bakery logo loads normally because it appears in the page header.
+
+A browser performance warning about lazy-loaded image dimensions was identified during testing. Explicit image dimensions or aspect-ratio styling can be added as a further improvement to reduce possible layout shifts.
+
+### Responsive Images
+
+CSS ensures that images resize according to the available screen space.
+
+### Form Security and Validation
+
+HTML5 and JavaScript validation are used to check information entered into the forms.
+
+JavaScript uses `textContent` when displaying the enquiry response to avoid interpreting submitted text as HTML.
+
+### HTTPS
+
+HTTPS should be used when the website is published through a hosting provider that supports secure connections.
+
+### Backups and Maintenance
+
+The project files should be backed up regularly. Website links, images and forms should also be checked when changes are made.
+
+---
+
+## 16. Part 3 Testing
+
+The website was tested locally using Visual Studio Code and Live Server.
+
+### Navigation Testing
+
+- All six HTML pages open correctly.
+- Navigation links work between pages.
+- The bakery logo links back to the Home page.
+
+### Products Page Testing
+
+- Product search works.
+- Bread filter works.
+- Pastries filter works.
+- Cakes filter works.
+- Cupcakes filter works.
+- All filter displays all products.
+- No-results message displays when there are no matching products.
+- Product images open in the lightbox.
+- Lightbox close button works.
+- Escape key closes the lightbox.
+
+### Enquiry Form Testing
+
+- Required fields are validated.
+- Invalid email addresses are rejected.
+- Invalid telephone numbers are rejected.
+- Valid form information displays a JavaScript response.
+- Clear Form resets the fields and response.
+
+### Contact Form Testing
+
+- Required fields are validated.
+- Invalid email addresses and telephone numbers are rejected.
+- Valid information prepares an email.
+- Clear Form resets the fields.
+
+### Responsive Testing
+
+The website was tested at the following screen sizes:
+
+| Device | Screen Size |
+|---|---|
+| Desktop | 1920 × 1080 |
+| Tablet | 820 × 1180 |
+| Mobile | 390 × 844 |
+
+The website displayed correctly at the tested screen sizes, with no reported horizontal overflow or overlapping content.
+
+### Final Technical Checks
+
+- Images were checked.
+- Internal links were checked.
+- Browser Console was checked.
+- Sitemap and robots files were created.
+
+A performance warning relating to lazy-loaded image dimensions was identified and remains a possible optimisation.
+
+---
+
+## 17. Content Research and Sourcing
 
 Rea's Bakery is a fictional organisation created for this academic project.
 
@@ -435,15 +618,15 @@ The content created for the website includes:
 - Opening hours.
 - Fictional bakery locations (Pretoria Central and Sunnyside).
 
-Images used in the completed website will be sourced from appropriate public-domain, Creative Commons or royalty-free resources where applicable. Image sources will be documented in the project's reference list.
+Images used in the website should be sourced from appropriate public-domain, Creative Commons or royalty-free resources where applicable. Image sources should be documented in the project's reference list.
 
-Any external information used during development will be referenced using the institution's required referencing style.
+Any external information used during development should be referenced using the institution's required referencing style.
 
 ---
 
-## 10. Technical Requirements
+## 18. Technical Requirements
 
-The website will require:
+The website requires:
 
 - A modern web browser.
 - HTML5 support.
@@ -452,28 +635,29 @@ The website will require:
 - A code editor such as Visual Studio Code.
 - Git for version control.
 - A GitHub repository.
+- A hosting platform for deployment.
 
-The website will be tested using different browsers to identify compatibility problems.
+The website was tested locally using Live Server.
 
 ---
 
-## 11. Timeline and Milestones
+## 19. Timeline and Milestones
 
 | Week | Activity | Status |
 |---|---|---|
 | Week 1 | Organisation research and project proposal | Completed |
-| Week 2 | Content research and sitemap | In Progress |
-| Week 3 | Initial HTML development | Planned |
-| Week 4 | CSS styling and layout | Planned |
-| Week 5 | JavaScript functionality | Planned |
-| Week 6 | Testing and debugging | Planned |
-| Week 7 | Documentation and final preparation | Planned |
+| Week 2 | Content research and sitemap | Completed |
+| Week 3 | Initial HTML development | Completed |
+| Week 4 | CSS styling and layout | Completed |
+| Week 5 | JavaScript functionality | Completed |
+| Week 6 | Testing and debugging | Completed |
+| Week 7 | Documentation and final preparation | In Progress |
 
-The exact dates will be adjusted according to the lecturer's official submission schedule.
+GitHub submission and website deployment will be completed as part of the final preparation stage.
 
 ---
 
-## 12. Budget
+## 20. Budget
 
 The estimated budget for the website project is:
 
@@ -486,31 +670,11 @@ The estimated budget for the website project is:
 | Development | Academic project |
 | **Estimated Total** | **R1,150 - R3,300** |
 
-The final costs may vary depending on the hosting provider, domain availability and resources selected.
+The final costs may vary depending on the hosting provider, domain availability and resources selected. A free hosting platform may also be used for the academic project.
 
 ---
 
-## 13. Part 1 Details
-
-Part 1 focuses on planning and establishing the initial structure of the website.
-
-The following components have been completed or planned:
-
-- Website project proposal.
-- Organisation selection.
-- Content research.
-- Content sourcing plan.
-- Sitemap.
-- Folder structure.
-- Initial HTML pages.
-- GitHub repository planning.
-- README documentation.
-
-Future parts of the project will expand the website with styling, JavaScript functionality, testing and additional improvements.
-
----
-
-## 14. Changelog
+## 21. Changelog
 
 ### Version 0.1 - Initial Project Setup
 
@@ -570,7 +734,37 @@ Changes:
 - Added spacing and gold borders between major sections.
 - Tested the website at desktop, tablet and mobile screen sizes.
 
-## 15. References
+### Version 3.0 - Part 3 JavaScript, SEO and Optimisation
+
+**Date:** November 2026
+
+Changes:
+
+- Added JavaScript functionality through the external `script.js` file.
+- Added enquiry form validation and response messages.
+- Added contact form validation and email preparation.
+- Added product search functionality.
+- Added product category filters.
+- Added a no-results message for product searches.
+- Added a product image lightbox.
+- Added lightbox close button functionality.
+- Added Escape key functionality to close the lightbox.
+- Added unique SEO page titles.
+- Added meta descriptions to all six pages.
+- Added relevant SEO keywords.
+- Added descriptive image alt text.
+- Created `sitemap.xml`.
+- Created `robots.txt`.
+- Added lazy loading to appropriate product images.
+- Tested navigation across all six pages.
+- Tested enquiry and contact forms.
+- Tested product search, filters and lightbox.
+- Tested the website on desktop, tablet and mobile.
+- Completed the main local website functionality checks.
+
+---
+
+## 22. References
 
 ### Web Development
 
@@ -588,12 +782,30 @@ Rea's Bakery. 2026. *Organisation information, mission, vision, products and ser
 
 ### Image Sources
 
-Image sources will be added to this section after the images have been selected and downloaded for the website. Each image will be referenced according to the institution's required referencing style.
+Image sources should be added to this section after confirming the original websites or creators from which the images were obtained. Each image should be referenced according to the institution's required referencing style.
 
 ---
 
-## 16. Academic Project Disclaimer
+## 23. Academic Project Disclaimer
 
 Rea's Bakery is a fictional organisation created specifically for this academic website project.
 
 The addresses, telephone number, email address, product prices, locations and organisation history presented in the website are fictional and are intended for demonstration and educational purposes only.
+
+The forms demonstrate client-side validation and email preparation. They are not connected to a live bakery database or server-side email processing system.
+
+---
+
+## 24. Project Completion Status
+
+The six website pages have been developed and tested locally.
+
+The main HTML, CSS and JavaScript features have been implemented. Responsive design, navigation, product search, category filters, image lightbox and form functionality have also been tested.
+
+The remaining steps are to:
+
+- Confirm the final screenshots.
+- Update the sitemap and robots file with the published website URL.
+- Upload the complete project to GitHub.
+- Complete the final README review.
+- Deploy the website using a suitable hosting platform.
